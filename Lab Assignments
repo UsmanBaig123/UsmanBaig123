@@ -1,1 +1,114 @@
+/*Problem 1:
+Write program to print the kth digit from last. E.g. input 23617 and k=4 output 3.*/
+var data = 123456789;
+let temp = data;
+let index = parseInt(prompt("Please enter the index"));
+for (let i = 0; i < index; i++) {
+    value = temp % 10;
+    temp = temp / 10;
+}
+console.log("The value on this position is: " + parseInt(value));
+/*Problem 2:
+Write program to find sum of all digits. Input 23618 output 2+3+6+1+8=20*/
+var value = 98765,
+    sum = 0;
+console.log("Number: " + value);
+while (value) {
+    sum += value % 10;
+    value = parseInt(value / 10);
+}
+
+console.log("Sum is: "+sum);
+/*Problem 3:
+Write program to find sum of even digits. Input 23617 output 2+6=8*/
+let str1 = '123456';
+var summ=0;
+let arrays = str1.split("");
+console.log(arrays);
+
+for (var i = 0; i < arrays.length; i++) {
+         
+    if (arrays[i] % 2 == 0) {
+
+        summ += parseInt(arrays[i]);
+    }
+}
+console.log(summ);
+/*Problem 4:
+Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10.*/
+for (i = 0; i <= 10; i++) {
+    var square = i * i;
+    var cube = i * i * i;
+    console.log("square of " +i + ": " +square);
+    console.log("cube of " + i + ": " + cube);
+}
+ 
+/*Problem 5:
+Develop and demonstrate JavaScript script that uses functions for the following problems: 
+1.	Parameter: A string 
+2.	Output: The position in the string of the left-most vowel */
+var str = prompt("Enter the Input");
+        
+            str = str.toUpperCase();
+            for (var i = 0; i < str.length; i++) {
+                var chr = str.charAt(i);
+                if (chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') break;
+}
+            if (i < str.length)
+                console.log("The position of the left most vowel is: " + (i + 1));
+else
+                console.log("No vowel found in the entered string");
+/*3.	Parameter: A number  
+4.	Output: The number with its digits in the reverse order*/
+var a = prompt("Enter The Query"),
+            b = parseInt(a),
+            z = 0;
+        if (b) {
+            while (b > 0)
+                var r = b % 10, z = z * 10 + r, b = Math.floor(b / 10);
+            console.log("Entered number : " + a );
+            console.log("Given Number In Reverse Order : " + z);
+}
+else {
+           
+}
+/*Problem 6:
+Write a JavaScript program where the program takes a random integer between 1 to 10, 
+the user is then prompted to input a guess number. If the user input matches with guess number, 
+the program will display a message "You WIN" otherwise display a message "Not matched".*/
+var y = Math.floor(Math.random() * 10 + 1);
+        
+        var x = prompt("Write you guess number?"); 
+            if (x == y) {
+                console.log("YOU WIN");      
+}
+else if (x != y) {
+                console.log("Not matched");
+}
+else {
+               
+}
+ 
+/*Problem 7:
+Write a JavaScript program to check whether 10 appears in first or last position of a given array of integers. 
+The array length must be greater or equal to 2.*/
+var razzak = ['10', '2', '3', '4'];
+        var end_point = razzak.length - 1;
+        if (razzak[0] == 10 && razzak[end_point] == 10) {
+            console.log("10 is in start and end of the array");
+}
+else if (razzak[end_point] == 10) {
+            console.log("10 is in end of the array");
+}
+else if (razzak[0] == 10) {
+            console.log("10 is in start of the array");
+}
+/*Problem 8:
+Write a JavaScript function that returns a passed string with letters in alphabetical order.
+Example string: 'comsats'
+Expected Output: 'acmost'*/
+function alphabet_game(str) {
+                return str.split('').sort().join('');
+}
+            console.log(alphabet_game("COMSATS"));
 
