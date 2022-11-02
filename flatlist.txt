@@ -1,0 +1,48 @@
+import React, { useState } from 'react';
+import { StyleSheet,  Text, View ,FlatList } from 'react-native';
+
+export default function App(){
+  const [people , setpeople]=useState([
+    { name: 'usman' , key: '1' },
+    { name: 'ahmad' , key: '2' },
+    { name: 'ahsan' , key: '3' },
+    { name: 'ali'   , key: '4' },
+    
+  ]);
+
+return(
+  <View style={styles.container}>
+    <FlatList
+    data={people}
+    renderItem={({item}) =>(
+      <Text style={styles.item} > {item.name}  </Text>
+    )}
+    />
+  </View>
+)
+}
+const styles=StyleSheet.create(
+  {
+    container:{
+      flex:1,
+    backgroundColor:"pink",
+    paddingTop:40,
+    paddingHorizontal:20
+  },
+  item:{
+    marginTop: 24 , 
+    padding:30,  
+    backgroundColor:"yellow",
+    fontSize:'24',
+    
+  }
+    });
+
+  
+
+
+
+
+  
+
+
