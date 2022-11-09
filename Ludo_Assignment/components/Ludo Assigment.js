@@ -1,259 +1,444 @@
-import { StyleSheet, View } from "react-native";
-export default function App() {
+import { View, StyleSheet } from "react-native";
+
+
+export default function App(){
   return (
     <View style={styles.container}>
-      <View style={styles.wrapper}>
-        <View style={styles.Box1}>
-          <View style={styles.box1}>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
+      <View style={styles.board}>
+        <View style={[{ backgroundColor: "green" }, styles.box]}>
+          <View
+            style={{
+              height: 100,
+              width: 100,
+              backgroundColor: "darkgreen",
+              padding: 10,
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
           </View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
         </View>
 
-        <View style={styles.Box2}>
-          <View style={styles.box2}>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
+        <View
+          style={{
+            height: 150,
+            width: 75,
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+          }}
+        >
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={styles.whitebox} />
+
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "yellow" }]} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+        </View>
+
+        <View style={[{ backgroundColor: "yellow" }, styles.box]}>
+          <View
+            style={{
+              height: 100,
+              width: 100,
+              backgroundColor: "orange",
+              padding: 10,
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
           </View>
         </View>
-      </View>
-      <View style={styles.wrapper}>
-      <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
+
+        <View
+          style={{
+            height: 75,
+            width: 150,
+            flexDirection: "row",
+
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+          }}
+        >
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "green" }]} />
+
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
         </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
+
+        <View
+          style={{
+            width: 75,
+            height: 75,
+            backgroundColor: "#fff",
+            flexDirection:"row",
+            flexWrap:"wrap",
+            borderWidth:25,
+            borderRadius:55,
+            borderLeftColor:"green",
+            borderTopColor:"yellow",
+            borderRightColor:"blue",
+            borderBottomColor:"red"
+            
+          }}
+        >
+            
         </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
+
+        <View
+          style={{
+            height: 75,
+            width: 150,
+            flexDirection: "row",
+
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+          }}
+        >
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={styles.whitebox} />
+
+          <View style={styles.whitebox} />
+          
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+          <View style={styles.whitebox} />
+          
+          <View style={styles.whitebox}/>
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={styles.whitebox} />
         </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.sqBox}></View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-      </View>
-      <View style={styles.wrapper}>
-        <View style={styles.Box3}>
-          <View style={styles.box3}>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
+
+
+
+        <View style={[{ backgroundColor: "red" }, styles.box]}>
+          <View
+            style={{
+              height: 100,
+              width: 100,
+              backgroundColor: "darkred",
+              padding: 10,
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
           </View>
         </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
+
+        <View
+          style={{
+            height: 150,
+            width: 75,
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+          }}
+        >
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+
+          <View style={styles.whitebox} />
+
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+
+          <View style={[styles.whitebox, { backgroundColor: "red" }]} />
+          <View style={styles.whitebox} />
+
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
+          <View style={[styles.whitebox, { backgroundColor: "blue" }]} />
+
+          <View style={styles.whitebox} />
+          <View style={styles.whitebox} />
         </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.wrapper2}>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-          <View style={styles.sbox}></View>
-        </View>
-        <View style={styles.Box4}>
-          <View style={styles.box4}>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.circle}></View>
-              <View style={styles.circle}></View>
-            </View>
+
+
+
+
+        <View style={[{ backgroundColor: "blue" }, styles.box]}>
+          <View
+            style={{
+              height: 100,
+              width: 100,
+              backgroundColor: "darkblue",
+              padding: 10,
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
+
+            <View
+              style={{
+                width: 30,
+                height: 30,
+                borderRadius: 15,
+                backgroundColor: "#fff",
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            />
           </View>
         </View>
+
+
+
       </View>
     </View>
   );
+
 }
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "black",
+    backgroundColor: "#fff",
+    alignItems: "center",
     justifyContent: "center",
   },
-  wrapper: {
+  board: {
+    backgroundColor: "grey",
+    width: 375,
+    height: 375,
     flexDirection: "row",
-    justifyContent: "center",
-    backgroundColor: "black",
+    flexWrap: "wrap",
   },
-  wrapper2: {
-    flexDirection: "column",
-    justifyContent: "center",
-  },
-  Box1: {
-    backgroundColor: "red",
+  box: {
     height: 150,
     width: 150,
-  },
-  box1: {
-    backgroundColor: "maroon",
-    height: 100,
-    width: 100,
-    margin: 25,
-  },
-  Box2: {
-    backgroundColor: "gold",
-    height: 150,
-    width: 150,
-  },
-  box2: {
-    backgroundColor: "goldenrod",
-    height: 100,
-    width: 100,
-    margin: 25,
-  },
-  Box3: {
-    backgroundColor: "green",
-    height: 150,
-    width: 150,
-  },
-  box3: {
-    backgroundColor: "darkgreen",
-    height: 100,
-    width: 100,
-    margin: 25,
-  },
-  Box4: {
-    backgroundColor: "blue",
-    height: 150,
-    width: 150,
-  },
-  box4: {
-    backgroundColor: "darkblue",
-    height: 100,
-    width: 100,
-    margin: 25,
-  },
-  circle: {
-    backgroundColor: "white",
-    height: 20,
-    width: 20,
-    borderRadius: 20,
-    marginLeft: 10,
-    marginTop: 18,
-    marginRight: 10,
+    alignItems: "center",
     justifyContent: "center",
   },
-  row: {
-    justifyContent: "center",
-    flexDirection: "row",
-  },
-  sbox: {
-    justifyContent: "center",
-    backgroundColor: "white",
-    height: 25,
+  whitebox: {
     width: 25,
-    borderRadius:6
+    height: 25,
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: 1,
+    padding: 0,
+    margin: 0,
   },
-  sqBox:{
-    width:75,
-    height:75,
-    backgroundColor:'brown',
-    borderRadius:10
-  }
 });
-
